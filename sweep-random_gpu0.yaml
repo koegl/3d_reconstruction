@@ -1,0 +1,15 @@
+project: DICEsweep
+program: train.py
+method: grid
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  batch_size:
+    values: [8]
+  learning_rate:
+    values: [0.0001, 0.00012, 0.00008]
+  gpu_id:
+    value: 0
+  epochs:
+    value: 12
